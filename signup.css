@@ -1,0 +1,145 @@
+
+#clickme::after {
+    height: 100%;
+    left: -35%;
+    transform: skew(50deg);
+    transition-duration: 0.6s;
+    transform-origin: top left;
+    width: 0;
+
+
+}
+#clickme:hover:after {
+    height: 100%;
+    width: 135%;
+}
+
+
+body{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    min-height: auto;
+    background: url(https://th.bing.com/th/id/OIP.cEvMVvG32BhQQ2YqwW5VqgHaE0?w=281&h=183&c=7&r=0&o=5&pid=1.7);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.box2{
+    position: relative;
+    width: 380px;
+    min-height: 550px;
+    height : auto;
+    background: rgb(255, 47, 151);
+    border-radius: 8px;
+    overflow: hidden;
+}
+.form
+{
+position: absolute;
+background-color: rgb(139, 255, 226);
+inset: 2px;
+border-radius: 8px;
+padding: 50px 40px;
+display: flex;
+flex-direction: column;
+z-index: 10;
+
+}
+.form h2
+{
+    text-align: center;
+    color:palevioletred;
+    font-weight: 500;
+    letter-spacing: 0.1em;
+}
+.inputBox
+{
+    position: relative;
+    width: 300px;
+    margin-top: 20px;
+
+    
+}
+.inputBox input
+{
+    width: 100%;
+    position: relative;
+    padding: 20px 10px 10px;
+    background: transparent;
+    border:none;
+    outline :none;
+    color: #23242a;
+    font-size: 1em;
+    letter-spacing: 0.05em;
+    z-index: 10;
+
+
+}
+.inputBox span
+{
+    position: absolute;
+    left: 0;
+    padding: 20px 0px 10px;
+    font-size: 1em;
+    color: #8f8f8f;
+    pointer-events: none;
+
+
+}
+.inputBox input:valid ~ span,
+.inputBox input:focus ~ span
+{
+    color: palevioletred;
+    transform: translateX(0px) translateY(-34px);
+    font-size: 0.75em;
+}
+.inputBox i
+{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 2px;
+    background: palevioletred;
+    transition: 0.5s;
+    pointer-events: none;
+    z-index: 9;
+}
+.inputBox input:valid ~ i,
+.inputBox input:focus ~ i
+{
+    height: 44px;
+}
+.links
+{
+    display: flex;
+    justify-content: space-between;
+}
+.links a
+{
+    margin: 10px 0;
+    font-size: 0.75em;
+    color: #8f8f8f;
+    text-decoration: none;
+
+}
+.links a:hover
+{
+    color: palevioletred;
+}
+#signupBtn{
+    border: none;
+    outline: none;
+    background-color:rgb(216, 112, 207);
+    padding: 11px 25px;
+    width: 100px;
+    margin-top: 10px;
+    border-radius: 4px;
+    font-weight: 600;
+    cursor : pointer;
+}
+
+#signupBtn:active{
+    opacity: 0.8;
+}

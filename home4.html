@@ -1,0 +1,85 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="home4.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <script src="https://unpkg.com/axios@1.1.2/dist/axios.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="header">
+      <div style="display: flex; ">
+        
+          
+          <button id="btn1" onclick="backTomain()"> Trang chủ </button>
+          <button id="btn2" onclick="introDuce()"> Giới thiệu </button>
+        
+           <button id="btn3" onclick="item()">Sản phẩm</button>
+
+          <button id="btn4" onclick="shop()">Shop now</button>
+          <div>
+              <button id="btn5" onclick="myFunction()" class="dropbtn5"> MORE </button>
+              <div id="myDropdown" class="dropdown-content">
+                  
+                  <button id="drop1" onclick="myDrop1()"><a>Hoa</a></button>
+                  <button id="drop2" onclick="myDrop2()"><a>Bánh kẹo</a></button>
+                  <button id="drop3" onclick="myDrop3()"><a>Thời tiết</a></button>
+                </div>
+              
+          </div>
+          </div>
+
+   <div style="display: flex; justify-content: end; align-items: flex-start;">
+   <input id='tk' type="Tìm kiếm" placeholder="Search">
+   <button id="btn6"> Search </button>
+   <div>
+      <button id="logout" onclick="logoutButton()">Log out</button>
+          
+          </div>
+
+  </div>
+</div>
+<div class="container">
+  <div class="main-section">
+      <div class="search-bar">
+          <i class="fas fa-search search-icon"></i>
+          <input type="text" name="search-city" id="search-input" placeholder="Tìm kiếm thành phố...">
+      </div>
+      <div class="info-wrapper">
+          <p class="city-name">--</p>
+          <p class="weather-state">--</p>
+          <img src="http://openweathermap.org/img/wn/10d@2x.png" alt="weather icon" class="weather-icon">
+          <p class="temperature">--</p>
+      </div>
+  </div>
+  <div class="additional-section">
+      <div class="row">
+          <div class="item">
+              <div class="label">Sunrise</div>
+              <div class="value sunrise">--</div>
+          </div>
+          <div class="item">
+              <div class="label">Sundown</div>
+              <div class="value sunset">--</div>
+          </div>
+      </div>
+      <div class="row">
+          <div class="item">
+              <div class="label">Humidity</div>
+              <div class="value"><span class="humidity">--</span>%</div>
+          </div>
+          <div class="item">
+              <div class="label">Wind</div>
+              <div class="value"><span class="wind-speed">--</span> km/h</div>
+          </div>
+      </div>
+  </div>
+</div>
+</div>
+
+<script src="home4.js"></script>
+</body>
+</html>

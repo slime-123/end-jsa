@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="home3.css">
+</head>
+<body>
+    <div class="header">
+  <div style="display: flex; ">
+            
+    <button id="btn1" onclick="backTomain()"> Trang chủ </button>
+    <button id="btn2" onclick="introDuce()"> Giới thiệu </button>
+  
+     <button id="btn3" onclick="item()">Sản phẩm</button>
+
+    <button id="btn4" onclick="shop()">Shop now</button>
+    <div>
+        <button id="btn5" onclick="myFunction()" class="dropbtn5"> MORE </button>
+        <div id="myDropdown" class="dropdown-content">
+            
+            <button id="drop1" onclick="myDrop1()"><a>Hoa</a></button>
+            <button id="drop2" onclick="myDrop2()"><a>Bánh kẹo</a></button>
+            <button id="drop3" onclick="myDrop3()"><a>...</a></button>
+          </div>
+        
+    </div>
+    </div>
+    <div id="slider" class="slider">
+      <div class="slider-content">
+        <div class="slider-content-wrapper">
+          <div class="slider-content__item image-1"></div>
+          <div class="slider-content__item image-2"></div>
+          <div class="slider-content__item image-3"></div>
+          <div class="slider-content__item image-4"></div>
+          <div class="slider-content__item image-5"></div>
+          <div class="slider-content__item image-6"></div>
+                  
+        </div>
+      </div>
+
+<div style="display: flex; justify-content: end; align-items: flex-start;">
+<input id='tk' type="Tìm kiếm" placeholder="Search">
+<button id="btn6"> Search </button>
+<div>
+<button id="logout" onclick="logoutButton()">Log out</button>
+    
+    </div>
+    <!-- <div class="hero min-h-screen bg-base-200"> -->
+        <!-- <div class="hero-content flex-col lg:flex-row">
+          <img src='https://gamek.mediacdn.vn/thumb_w/690/133514250583805952/2022/9/25/avatar1664076788709-16640767888443261054.jpg' class="max-w-sm rounded-lg shadow-2xl" />
+          <div> -->
+            <!-- <h1 class="text-5xl font-bold">Box Office News!</h1> -->
+            <!-- <p class="py-6"></p> -->
+            <!-- <button class="btn btn-primary">Get Started</button> -->
+          </div>
+        </div>
+      </div>
+
+
+
+        <div  id="products" class="carousel carousel-center rounded-box flex flex-1 gap-x-4 px-12 pb-12">
+
+        </div>
+
+
+
+      </div>
+
+    <script src="home3.js"></script>
+</body>
+</html>

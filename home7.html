@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="home7.css">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@2.51.4/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script> 
+    <script src="https://unpkg.com/axios@1.1.2/dist/axios.min.js"></script>
+</head>
+<body>
+    <div class="header">
+        <div>
+            <div class="header">
+                <div style="display: flex; ">
+                    
+                    <button id="btn1" onclick="backTomain()">  Trang chủ </button>
+                    <button id="btn2" onclick="introDuce()"> Giới thiệu </button>
+                    <button id="btn3" onclick="item()">Sản phẩm</button>
+                    <button id="btn4" onclick="shop()">Shop now</button>
+                    <div>
+                        <button id="btn5" onclick="myFunction()" class="dropbtn5"> MORE </button>
+                        <div id="myDropdown" class="dropdown-content">
+                            <button id="drop1" onclick="myDrop1()"><a>Hoa</a></button>
+                            <button id="drop2" onclick="myDrop2()"><a>Bánh kẹo</a></button>
+                            <button id="drop3" onclick="myDrop3()"><a>...</a></button>
+                          </div>
+                    </div>
+                    </div>
+        
+        
+             <div style="display: flex; justify-content: end; align-items: flex-start;">
+             <input id='tk' type="Tìm kiếm" placeholder="Search">
+             <button id="btn6"> Search </button>
+             <div>
+                <button id="logout" onclick="logoutButton()">Log out</button>
+                    
+                    </div>
+            </div>
+
+
+
+
+
+        <div  id="products" class="carousel carousel-center rounded-box flex flex-1 gap-x-4 px-12 pb-12">
+
+        </div>
+
+
+
+
+
+    <script src="home7.js"></script>
+</body>
+</html>
